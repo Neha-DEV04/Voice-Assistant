@@ -1,0 +1,79 @@
+{
+    "intents": [
+      {
+        "name": "greeting",
+        "examples": ["Hello", "Hi", "Hey","how are you","What's up!"],
+        "responses": [
+          "Hello! How can I assist you today?",
+          "Hi there! How can I help you?",
+          "Hey, what can I do for you today?"
+        ],
+        "context": ["greeting"]
+      },
+      {
+        "name": "goodbye",
+        "examples": ["Goodbye", "See you later", "Bye", "Bye-Bye","shut yourself down","shut down","turn off","shutdown"],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later!",
+          "Goodbye! Feel free to return anytime."
+        ],
+        "action": "stop_Evio",
+        "context": ["goodbye"]
+      },
+      {
+        "name": "weather",
+        "examples": ["What's the weather like today?", "Tell me the weather forecast"],
+        "action": "get_weather",
+        "context": ["location"]
+      },
+      {
+        "name": "time",
+        "examples": ["What time is it?", "Tell me the current time","current time", "time"],
+        "action": "get_time",
+        "context": ["location"]
+      },
+      {
+        "name": "Wikipedia",
+        "examples": ["search on wikipedia","wikipedia","search this on wikipedia"],
+        "action":"search_wikipedia",
+        "context": ["search wikipedia"]
+      },
+      
+      {
+        "name": "Youtube",
+        "examples": ["search on youtube","Youtube","youtube search","search this on youtube"],
+        "action":"search_youtube",
+        "context": ["search youtube"]
+      },
+      {
+        "name": "Google Search",
+        "examples": ["search on google","Google","Google search","search this on google"],
+        "action":"search_google",
+        "context": ["search google"]
+      },
+      {
+        "name": "introduction",
+        "examples": ["who are you", "what is your name", "your name","introduce yourself","yourself","your name","hu r u"],
+        "responses": [
+          "I am Evio, a voice assistant made by Kshitij. I am still under development! i can do basic tasks for you."
+        ],
+        "context": ["introduction"]
+      }
+      ,
+      {
+        "name": "sleep",
+        "examples": ["sleep", "go to sleep", "sleep off"],
+        "action": 
+          "sleep_Evio"
+      },
+      {
+        "name": "hourglass",
+        "examples": ["set an hourglass","hourglass", " set a timer", "set a stopwatch", "stopwatch"],
+        "action": 
+          "set_timer"
+      }
+      
+    ]
+  }
+  
